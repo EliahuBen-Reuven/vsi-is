@@ -23,9 +23,7 @@ currently.
 ## Stock images
 The following operating systems are available as stock images when you create a virtual server.
 * CentOS 7.x
-* Ubuntu 16.04, 18.04
-* Debian 8.x, 9.x
-* Windows 2016, 2012 R2, 2012
+* Ubuntu 16.04 LTS
 
 When you order an instance, the images are cloud-init enabled to optimize provisioning times. With a cloud-init enabled image, you can provide user data. In the **User Data** field on the order form, you can enter optional cloud-init user data for the server. For more information about user data and automation, see [User Data](vsi_is_provisioning_scripts.html).
 
