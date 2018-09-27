@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-08-08"
+lastupdated: "2018-09-27"
 
 
 ---
@@ -22,6 +22,7 @@ lastupdated: "2018-08-08"
 When you launch an instance, you can add user data that automatically performs common configuration tasks or runs scripts. In the **User Data** field on the order form, you can enter optional cloud-init user data for the server.
 {:shortdesc}
 
+## User data examples for Linux 
 The following example shows how a Linux user can add a new user and provide the user with an authorized SSH key. The **Name** field will have the public key added to `~/.ssh/authorized_keys`. 
 
 ```
@@ -47,3 +48,12 @@ echo <sshKey> > ~/.ssh/authorized_keys
 {:codeblock}
 
 You can paste one of these examples directly into the **User Data** field. The user data is then available to the virtual server instance during provisioning.
+
+## User data example for Windows
+The following example shows how user data can be passed to a Windows instance. You can copy and paste this example directly into the **User Data** field.
+
+```
+#ps1_sysnative
+Set-Content -Path "C:\\test.txt" -Value "Hello IBM Cloud Instance"
+```
+{:codeblock}
