@@ -25,8 +25,8 @@ The following families are available:
 | Families | Description |
 | -------- | ----------- |
 | [Balanced](vsi_is_profiles_balanced.html) | Best for common cloud workloads that require a balance of performance and scalability. The balanced profiles (with network-attached storage) provide higher performance, since resources are not oversubscribed. |
-| [Compute](virtual-servers-is-compute.html)  | Best for moderate to high web traffic workloads. Compute profiles are best for workloads with intensive CPU demands, such as high web traffic workloads, production batch processing, and front-end web servers. |
-| [Memory](virtual-servers-is-memory.html) | Best for memory caching and real-time analytics workloads. Memory profiles are best for memory intensive workloads, such as large caching workloads, intensive database applications, or in-memory analytics workloads. |
+| [Compute](vsi_is_profiles_compute.md)  | Best for moderate to high web traffic workloads. Compute profiles are best for workloads with intensive CPU demands, such as high web traffic workloads, production batch processing, and front-end web servers. |
+| [Memory](vsi_is_profiles_memory.md) | Best for memory caching and real-time analytics workloads. Memory profiles are best for memory intensive workloads, such as large caching workloads, intensive database applications, or in-memory analytics workloads. |
 {: caption="Table 1. Virtual server family selections" caption-side="top"}
 
 ## Viewing profile configurations
