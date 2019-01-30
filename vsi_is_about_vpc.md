@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2017, 2018
+  years: 2018, 2019
   
-lastupdated: "2018-08-06"
+lastupdated: "2019-01-16"
 
 
 ---
@@ -15,13 +15,37 @@ lastupdated: "2018-08-06"
 {:screen: .screen}
 {:tip: .tip}
 {:download: .download}
+{:note: .note}
 
-# About IBM Cloud VPC
+# About Virtual Servers for VPC
 {: #virtual-private-cloud}
 
-A Virtual Private Cloud (VPC) is a virtual network that is tied to your customer account. It offers you a cost-effective entry point that provides cloud security and the ability to scale dynamically with growth. It gives you fine-grained control over your virtual infrastructure and your network traffic segmentation.
+{{site.data.keyword.vsi_is_full}} give you access to all of the benefits of {{site.data.keyword.vpc_short}}, including network isolation, security, and flexibility. 
+{:shortdesc}
+
+## What is {{site.data.keyword.vpc_short}}?
+An {{site.data.keyword.vpc_short}} is a virtual network that is tied to your customer account. It offers you a cost-effective entry point that provides cloud security and the ability to scale dynamically with growth. It gives you fine-grained control over your virtual infrastructure and your network traffic segmentation.
 {: shortdesc}
 
-{{site.data.keyword.cloud}} VPC is part of the next generation of the IBM One Cloud platform, which redefines the traditional industry standards for performance, service growth, flexibility, and deployment freedom.
+For more information about {{site.data.keyword.vpc_short}}, see [About IBM Cloud VPC](/docs/infrastructure/vpc/about-vpc-is.html).
 
-For more information about {{site.data.keyword.cloud_notm}} Virtual Private Cloud, see [About IBM Cloud VPC](/docs/infrastructure/vpc/about.html).
+## What are {{site.data.keyword.vsi_is_short}}?
+With {{site.data.keyword.vsi_is_short}}, you can create an instance that consists of your virtual compute resources and resulting capacity within an {{site.data.keyword.vpc_short}}. When you provision an instance, you select an instance profile that matches the amount of memory and compute power that you need for the application or software that you plan to run on the instance. After you provision an instance, you control and manage those infrastructure resources. Each account has a limit on the number of running instances across servers. For more information about this limit, see [FAQs](vsi_is_faq.html#faqs). 
+
+## How are virtual server instances for {{site.data.keyword.vpc_short}} different from other IBM virtual server offerings?
+
+In today's IBM Cloud Virtual Server offering, instances use native subnet and VLAN networking to communicate to each other within a data center (and single pod). Using subnet and VLAN networking in one pod works well until you must scale up or have large virtual resource demands that require resources to be created between pods. (Adding appliances for VLAN spanning can get expensive and complicated!) 
+
+{{site.data.keyword.vpc_short}} adds a network orchestration layer that eliminates the pod boundary, creating infinite capacity for scaling instances. The network orchestration layer handles all of the networking for all virtual server instances that are within an {{site.data.keyword.vpc_short}} across regions and zones. With the software defined networking capabilities that {{site.data.keyword.vpc_short}} provides, you have more options for [VPNs](/docs/infrastructure/vpc-network/using-vpn.html), [LBaaS](/docs/infrastructure/vpc-network/using-lbaas.html), multi-vNIC instances, and larger [subnet](/docs/infrastructure/vpc-network/vpc-regions-and-subnets.html#ibm-cloud-vpc-and-subnets) sizes. For more information, see [About Networking for VPC](/docs/infrastructure/vpc-network/about-network.html). 
+
+{{site.data.keyword.vsi_is_short}} also have the following features that provide a simpler user experience and cost savings:
+* New {{site.data.keyword.cloud_notm}} console
+* New {{site.data.keyword.cloud_notm}} infrastructure services, regional API and CLI
+* New billing model with sustained usage discount tiers, as described in [Pricing](/docs/infrastructure/vpc/vpc-vsi-pricing.html)
+
+{{site.data.keyword.vsi_is_short}} are not compatible with the classic virtual server offerings. If you are interested in any of the  {{site.data.keyword.cloud_notm}} {{site.data.keyword.BluVirtServers_short}} offerings on the classic infrastructure, see [IBM Cloud Virtual Servers](../../docs/vsi/vsi_index.html#getting-started-tutorial).
+{:note}
+
+
+
+
