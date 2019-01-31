@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2018-11-13"
+lastupdated: "2019-01-31"
 
 ---
 
@@ -12,6 +12,7 @@ lastupdated: "2018-11-13"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:tip: .tip}
+{:important: .important}
 {:table: .aria-labeledby="caption"}
 
 # Connecting to your Windows instance
@@ -27,6 +28,9 @@ Make sure to complete the following prerequisites before you begin:
 2. Create a new security group or add a rule to the default security group to enable inbound access for the Remote Desktop default port, 3389. For more information, see [Using Security Groups in the VPC CLI and API](/docs/infrastructure/vpc-network/security-groups.html).
 3. Ensure that inbound traffic over TCP/IP port 3389 is permitted on the VPC's default ACL. For more information, see [Using Network ACLs in the VPC CLI and API](/docs/infrastructure/vpc-network/using-acls.html).
 4. Verify that you have OpenSSL installed. To successfully decrypt your password, you must run OpenSSL and not LibreSSL. For more information, see [OpenSSL Downloads ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.openssl.org/source/){: new_window}.
+
+LibreSSL isn't compatible for the decryption of your password. You must run OpenSSL to decrypt your password.
+{:important}
 
 ## Connecting to your Windows instance
 
