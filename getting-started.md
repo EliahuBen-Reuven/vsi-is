@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-21"
+lastupdated: "2019-02-13"
 
 ---
 
@@ -18,8 +18,13 @@ lastupdated: "2019-01-21"
 # Getting Started with Virtual Servers for VPC
 {: #gettingstartedvsigen}
 
-Use {{site.data.keyword.vsi_is_full}} to provision scalable compute resources in the IBM Cloud. You can create as many virtual servers as you need, configure network and security, and manage storage. All of this is available in an improved IBM Cloud console. The console is built to provide you with quick and easy access to adjust your environment with your changing workload demands. Bet you're anxious to get started, so let's get straight to business.
+Use {{site.data.keyword.vsi_is_full}} to provision scalable compute resources in the IBM Cloud. 
 {:shortdesc}
+
+IBM will be accepting a limited number of customers to participate in an Early Access program to VPC starting in early April, 2019 with expanded usage being opened in the following months. If your organization would like to gain access to IBM Virtual Private Cloud, please complete this [nomination form](https://{DomainName}/vpc){: new_window} and an IBM representative will be in contact with you regarding next steps.
+{: important}
+
+You can create as many virtual servers as you need, configure network and security, and manage storage. All of this is available in an improved IBM Cloud console. The console is built to provide you with quick and easy access to adjust your environment with your changing workload demands. Bet you're anxious to get started, so let's get straight to business.
 
 Before you begin, make sure you have [created an IBM Cloud VPC](/docs/infrastructure/vpc/getting-started.html).
 {:important}
