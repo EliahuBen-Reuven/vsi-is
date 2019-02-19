@@ -12,6 +12,7 @@ lastupdated: "2019-02-19"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:tip: .tip}
+{:note: .note}
 {:important: .important}
 {:table: .aria-labeledby="caption"}
 
@@ -66,8 +67,8 @@ After you create your Windows instance and complete the prerequisites, complete 
   
   where `~/testpwd` is the file where you saved your encrypted password as referenced in step 2.  
   
-LibreSSL, which is included with macOS, doesn't support SHA2 hashing algorithms that are needed to decrypt the password, resulting in `Public Key operation error` errors. You can obtain standard OpenSSL libraries by using a package management tool or by installing them manually. 
-{:note}
+  LibreSSL, which is included with macOS, doesn't support SHA2 hashing algorithms that are needed to decrypt the password, resulting in `Public Key operation error` errors. You can obtain standard OpenSSL libraries by using a package management tool or by installing them manually. 
+  {:note}
 
 4. After you decrypt your password, you can optionally associate a floating IP address to your Windows instance so you can connect to it from an internet location. Run the following command to associate a floating IP address to your instance:
 
