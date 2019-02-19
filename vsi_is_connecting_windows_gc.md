@@ -76,7 +76,7 @@ After you create your Windows instance and complete the prerequisites, complete 
 5. You now have what you need in order to connect to your Windows instance: decrypted password and floating IP address. Use your preferred Remote Desktop client to connect to your instance. To connect to your instance, provide the floating IP address and the decrypted password. The username is `Administrator` by default. 
 
 ## Next steps
-After you are connected to your instance, you can [manage your instances by using the {{site.data.keyword.cloud_notm}} console](vsi_is_manage_instances.html) or [manage your instances by using the CLI](vsi_is_manage_instances_cli.html).
+After you are connected to your instance, you can [manage your instances by using the {{site.data.keyword.cloud_notm}} console](/docs/vsi/vsi_is_manage_instances.html) or [manage your instances by using the CLI](/docs/vsi/vsi_is_manage_instances_cli.html).
 
 
 

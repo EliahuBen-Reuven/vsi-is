@@ -38,5 +38,5 @@ The following management tasks are available to you:
 
 You can interact with instances by viewing the summary of all instances on the *Virtual server instances* page, or by clicking an individual instance to view details and make changes. From the instance details page, you can also view the associated network interface, access its subnet, and reserve or delete a floating IP address.
 
-If you prefer to manage your instances by using the CLI, see [Managing an instance using the CLI](vsi_is_manage_instances_cli.html).
+If you prefer to manage your instances by using the CLI, see [Managing an instance using the CLI](/docs/vsi/vsi_is_manage_instances_cli.html).
 {: tip}

@@ -63,34 +63,34 @@ To create an instance, select the following instance details.
 
     <p>For memory, an instance can have up to 256 GB of fully dedicated RAM.</p>
     <p><note>Note: Maximum values vary by family.</note></p>
-    <p>For more information, see [Profiles](vsi_is_profiles.html).</p>
+    <p>For more information, see [Profiles](/docs/vsi/vsi_is_profiles.html).</p>
     </td>
     </tr>
     <tr>
     <td>Image</td>
     <td><p>All images use cloud-init, which allows you to enter user metadata associated with the instance for post provisioning scripts.</p>
-    <p>For more information, see [Images](vsi_is_images.html).</p>
+    <p>For more information, see [Images](/docs/vsi/vsi_is_images.html).</p>
     </td>
     </tr>
     <td>SSH Key</td>
     <td>
     <p>You must select an existing SSH key or upload a new SSH key to use before you can create the instance. SSH keys are used to securely connect to the instance after it's running.</p>
     <p>Note: Alpha-numeric combinations are limited to 100 characters.</p>
-    <p>For more information, see [SSH keys](vsi_is_ssh_keys_about.html).</p></td>
+    <p>For more information, see [SSH keys](/docs/vsi/vsi_is_ssh_keys_about.html).</p></td>
     </tr>
     <tr>
     <td>User data</td>
     <td>
-    <p>You can add user data that automatically performs common configuration tasks or runs scripts. <p>For more information, see [User data](vsi_is_provisioning_scripts.html).</p>
+    <p>You can add user data that automatically performs common configuration tasks or runs scripts. <p>For more information, see [User data](/docs/vsi/vsi_is_provisioning_scripts.html).</p>
     </td>
     </tr>
     <tr>
     <td>Boot volume</td>
-    <td>The default boot volume size for all profiles is 100 GB. For more information, see [Storage](vsi_is_storage.html).</td>
+    <td>The default boot volume size for all profiles is 100 GB. For more information, see [Storage](/docs/vsi/vsi_is_storage.html).</td>
     </tr>
     <tr>
     <td>Network interfaces</td>
-    <td>Assign networking options to connect into the IBM Cloud VPC. You can create and assign up to 5 network interface cards to each instance. For more information, see [Multiple IP addresses](vsi_is_network_security_options.html).</td>
+    <td>Assign networking options to connect into the IBM Cloud VPC. You can create and assign up to 5 network interface cards to each instance. For more information, see [Multiple IP addresses](/docs/vsi/vsi_is_network_security_options.html).</td>
     </tr>
     </TBODY>
     </table>
@@ -99,10 +99,10 @@ To create an instance, select the following instance details.
 
 3. Click **Create virtual server instance** when you are ready to provision.
 
-Do you prefer to create an instance using the CLI? For more information, see [Creating an instance using the CLI](vsi_is_create_instance_cli.html).
+Do you prefer to create an instance using the CLI? For more information, see [Creating an instance using the CLI](/docs/vsi/vsi_is_create_instance_cli.html).
 {: tip}
 
 ## Next steps
 A series of emails are sent to your administrator: acknowledgment of the virtual server instance order, order approval and processing, and a message stating the instance is created.
 
-After the server is created, associate a floating IP address to the instance. Then you can connect to your instance. For more information, see [Connecting to your Linux instance](vsi_is_connecting_linux_gc.html) or [Connecting to your Windows instance](vsi_is_connecting_windows_gc.html).
+After the server is created, associate a floating IP address to the instance. Then you can connect to your instance. For more information, see [Connecting to your Linux instance](/docs/vsi/vsi_is_connecting_linux_gc.html) or [Connecting to your Windows instance](/docs/vsi/vsi_is_connecting_windows_gc.html).

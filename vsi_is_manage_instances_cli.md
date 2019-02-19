@@ -61,5 +61,5 @@ Common management actions
 | Delete         | `ibmcloud is instance-delete` | After you confirm the delete action, the process to delete the instance and its associated vNIC, boot volume, and data begins. The delete action can take up to 30 minutes, but when the process is complete, the instance no longer appears on the Virtual server instances page. The floating IP address that is associated to the virtual server instance is unassociated, but remains on your account.    |
 {: caption="Table 1. Management actions for your instances" caption-side="top"}
 
-If you prefer to manage instances by using the {{site.data.keyword.cloud}} console, see [Managing an instance](vsi_is_manage_instances.html).
+If you prefer to manage instances by using the {{site.data.keyword.cloud}} console, see [Managing an instance](/docs/vsi/vsi_is_manage_instances.html).
 {: tip}

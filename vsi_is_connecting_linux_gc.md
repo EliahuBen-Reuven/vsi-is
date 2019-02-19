@@ -21,7 +21,7 @@ After you have created your {{site.data.keyword.vsi_is_full}} Linux instance, yo
 ## Locating floating IP address
 {: #locating-floating-ip-address}
 
-If you need to locate your floating IP address for the instance to which you want to connect, complete the following steps. If you already know your floating IP address, you can skip to [Getting connected](vsi_is_connecting_linux_gc.html#getting-connected). 
+If you need to locate your floating IP address for the instance to which you want to connect, complete the following steps. If you already know your floating IP address, you can skip to [Getting connected](/docs/vsi/vsi_is_connecting_linux_gc.html#getting-connected). 
 
 1. You need to identify your floating IP ID before you can locate your floating IP address. Run the following command to identify your floating IP ID:
 
@@ -102,4 +102,4 @@ The values returned below are for example purposes only.
    {:codeblock}
 
 ## Next steps
-After you are connected to your instance, you can [manage your instances using the {{site.data.keyword.cloud_notm}} console](vsi_is_manage_instances.html) or [manage your instances using the CLI](vsi_is_manage_instances_cli.html).
+After you are connected to your instance, you can [manage your instances using the {{site.data.keyword.cloud_notm}} console](/docs/vsi/vsi_is_manage_instances.html) or [manage your instances using the CLI](/docs/vsi/vsi_is_manage_instances_cli.html).

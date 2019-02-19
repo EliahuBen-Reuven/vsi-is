@@ -29,7 +29,7 @@ You can create as many virtual servers as you need, configure network and securi
 Before you begin, make sure you have [created an IBM Cloud VPC](/docs/infrastructure/vpc/getting-started.html).
 {:important}
 
-{{site.data.keyword.vsi_is_short}} are not compatible with the classic virtual server offerings. If you are interested in any of the  {{site.data.keyword.cloud_notm}} {{site.data.keyword.BluVirtServers_short}} offerings on the classic infrastructure, see [IBM Cloud Virtual Servers](../../docs/vsi/vsi_index.html#getting-started-tutorial).
+{{site.data.keyword.vsi_is_short}} are not compatible with the classic virtual server offerings. If you are interested in any of the  {{site.data.keyword.cloud_notm}} {{site.data.keyword.BluVirtServers_short}} offerings on the classic infrastructure, see [IBM Cloud Virtual Servers](/docs/vsi/vsi_index.html#getting-started-tutorial).
 {:note}
 
 <p>Use the following information to start creating and connecting to your instances quickly.
@@ -62,9 +62,9 @@ Before you begin, make sure you have [created an IBM Cloud VPC](/docs/infrastruc
    <td>4. Size and price your instance</td>
    <td>You have three family options when it comes to creating your instances: Balanced, Compute, and Memory. The families contain pre-configured instances, called Profiles, that meet the needs of most customers and can be ready to configure in as little as 5 minutes.  
      <ul>
-     <li><a href="vsi_is_profiles_balanced.html">Balanced</a></li>
-     <li><a href="vsi_is_profiles_compute.html">Compute</a></li>
-     <li><a href="vsi_is_profiles_memory.html">Memory</a></li> 
+     <li><a href="/docs/vsi/vsi_is_profiles_balanced.html">Balanced</a></li>
+     <li><a href="/docs/vsi/vsi_is_profiles_compute.html">Compute</a></li>
+     <li><a href="/docs/vsi/vsi_is_profiles_memory.html">Memory</a></li> 
      </ul>
   <p>Use the [Pricing](/docs/infrastructure/vpc/vpc-vsi-pricing.html) information to help you size and price your instance.</p></td>
  <tr>
@@ -76,22 +76,22 @@ Before you begin, make sure you have [created an IBM Cloud VPC](/docs/infrastruc
    <td>If you have not requested access already, request access to {{site.data.keyword.vpc_short}}.</td>
 <tr>
 <td>7. Generate an SSH key</td>
-<td> For instructions, see [SSH keys](vsi_is_ssh_keys_about.html).</td>
+<td> For instructions, see [SSH keys](/docs/vsi/vsi_is_ssh_keys_about.html).</td>
 <tr>
 <td>8. Planning for your instance</td>
-<td> For more information to help you plan for, provision, and configure your resources successfully, see [Planning for instances](vsi_best_practices.html).</td>
+<td> For more information to help you plan for, provision, and configure your resources successfully, see [Planning for instances](/docs/vsi/vsi_best_practices.html).</td>
 <tr>
 <td>9. Creating your instance</td>
 <td>
 <p>
-To start creating an instance, see [Creating an instance](vsi_is_create_instance.html).
+To start creating an instance, see [Creating an instance](/docs/vsi/vsi_is_create_instance.html).
 </td>  
 <tr>
 <td>10. Connecting to your instance</td>
 <td>Your instance is now ready! See the following topics under *Connecting* to verify the instance was successfully created.
    <ul>
-   <li>[Connecting to your Linux instance](vsi_is_connecting_linux_gc.html)</li>
-   <li>[Connecting to your Windows instance](vsi_is_connecting_windows_gc.html)</li>
+   <li>[Connecting to your Linux instance](/docs/vsi/vsi_is_connecting_linux_gc.html)</li>
+   <li>[Connecting to your Windows instance](/docs/vsi/vsi_is_connecting_windows_gc.html)</li>
    </ul>
 </td>
 </td>
@@ -105,7 +105,7 @@ To start creating an instance, see [Creating an instance](vsi_is_create_instance
   
 ## Next steps
 After your instance is provisioned, explore your options.
-* [Managing your instance](vsi_is_manage_instances.html)
+* [Managing your instance](/docs/vsi/vsi_is_manage_instances.html)
 * [{{site.data.keyword.vsi_is_short}} permissions](/docs/infrastructure/vpc/vpc-vsi-permissions.html)
 * [Security in your IBM Cloud VPC](/docs/infrastructure/vpc/vpc-security.html)
 * More about [IBM Cloud Virtual Private Cloud](/docs/infrastructure/vpc/about-vpc-is.html)

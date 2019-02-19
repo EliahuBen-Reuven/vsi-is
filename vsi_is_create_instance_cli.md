@@ -151,7 +151,7 @@ Use the following commands to determine the required information for creating a 
    ```
    {:screen}
 
-   If you do not have one available, you can create an SSH key using the `ibmcloud is key-create` command. For more information about managing SSH keys, see [Managing SSH keys](vsi_is_ssh_keys.html).
+   If you do not have one available, you can create an SSH key using the `ibmcloud is key-create` command. For more information about managing SSH keys, see [Managing SSH keys](/docs/vsi/vsi_is_ssh_keys.html).
 
 ## Creating an instance using the CLI
 After you know these values, use them to run the `instance-create` command. In addition to the information that you gathered, you must specify a name for the instance, and a port speed in MB per second. The following example shows the command in action (using generic x and 123 values for example purposes only).  
@@ -293,10 +293,10 @@ After you know these values, use them to run the `instance-create` command. In a
 Need more help? You can always run `ibmcloud is instance-create --help` to display help for creating an instance.
 {: tip}
 
-Do you prefer to create an instance using the {{site.data.keyword.cloud_notm}} console? For more information, see [Creating an instance](vsi_is_create_instance.html).
+Do you prefer to create an instance using the {{site.data.keyword.cloud_notm}} console? For more information, see [Creating an instance](/docs/vsi/vsi_is_create_instance.html).
 {: tip}
 
 ## Next steps
 <!-- A series of emails are sent to your administrator: acknowledgment of the virtual server instance order, order approval and processing, and a message stating the instance is created. -->
 
-After the server is created, you can connect to your instance. For more information, see [Connecting to your Linux instance](vsi_is_connecting_linux_gc.html) or [Connecting to your Windows instance](vsi_is_connecting_windows_gc.html).
+After the server is created, you can connect to your instance. For more information, see [Connecting to your Linux instance](/docs/vsi/vsi_is_connecting_linux_gc.html) or [Connecting to your Windows instance](/docs/vsi/vsi_is_connecting_windows_gc.html).

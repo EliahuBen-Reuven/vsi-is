@@ -30,7 +30,7 @@ An {{site.data.keyword.vpc_short}} is a virtual network that is tied to your cus
 For more information about {{site.data.keyword.vpc_short}}, see [About IBM Cloud VPC](/docs/infrastructure/vpc/about-vpc-is.html).
 
 ## What are {{site.data.keyword.vsi_is_short}}?
-With {{site.data.keyword.vsi_is_short}}, you can create an instance that consists of your virtual compute resources and resulting capacity within an {{site.data.keyword.vpc_short}}. When you provision an instance, you select an instance profile that matches the amount of memory and compute power that you need for the application or software that you plan to run on the instance. After you provision an instance, you control and manage those infrastructure resources. Each account has a limit on the number of running instances across servers. For more information about this limit, see [FAQs](vsi_is_faq.html#faqs). 
+With {{site.data.keyword.vsi_is_short}}, you can create an instance that consists of your virtual compute resources and resulting capacity within an {{site.data.keyword.vpc_short}}. When you provision an instance, you select an instance profile that matches the amount of memory and compute power that you need for the application or software that you plan to run on the instance. After you provision an instance, you control and manage those infrastructure resources. Each account has a limit on the number of running instances across servers. For more information about this limit, see [FAQs](/docs/vsi/vsi_is_faq.html#faqs). 
 
 ## How are virtual server instances for {{site.data.keyword.vpc_short}} different from other IBM virtual server offerings?
 
@@ -43,7 +43,7 @@ In today's IBM Cloud Virtual Server offering, instances use native subnet and VL
 * New {{site.data.keyword.cloud_notm}} infrastructure services, regional API and CLI
 * New billing model with sustained usage discount tiers, as described in [Pricing](/docs/infrastructure/vpc/vpc-vsi-pricing.html)
 
-{{site.data.keyword.vsi_is_short}} are not compatible with the classic virtual server offerings. If you are interested in any of the  {{site.data.keyword.cloud_notm}} {{site.data.keyword.BluVirtServers_short}} offerings on the classic infrastructure, see [IBM Cloud Virtual Servers](../../docs/vsi/vsi_index.html#getting-started-tutorial).
+{{site.data.keyword.vsi_is_short}} are not compatible with the classic virtual server offerings. If you are interested in any of the  {{site.data.keyword.cloud_notm}} {{site.data.keyword.BluVirtServers_short}} offerings on the classic infrastructure, see [IBM Cloud Virtual Servers](/docs/vsi/vsi_index.html#getting-started-tutorial).
 {:note}
 
 
