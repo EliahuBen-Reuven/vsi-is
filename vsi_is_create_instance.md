@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019 
-lastupdated: "2018-01-21"
+lastupdated: "2018-02-20"
 
 ---
 
@@ -84,9 +84,15 @@ To create an instance, select the following instance details.
     <p>You can add user data that automatically performs common configuration tasks or runs scripts. <p>For more information, see [User data](/docs/vsi-is/vsi_is_provisioning_scripts.html).</p>
     </td>
     </tr>
-    <tr>
+   <tr>
     <td>Boot volume</td>
-    <td>The default boot volume size for all profiles is 100 GB. For more information, see [Storage](/docs/vsi-is/vsi_is_storage.html).</td>
+    <td><p>The default boot volume size for all profiles is 100 GB. By default the boot volume includes provider managed encryption. If you want to use customer managed encryption, you can edit the details of the boot volume. For more information, see [Storage](/docs/vsi-is?topic=virtual-servers-is-storage#storage).</p>
+    </td>
+    </tr>
+    <tr>
+    <td>Attached block storage volume</td>
+    <td><p>You can add one or more secondary data volumes to be included when you provision the instance. To add volumes, click **New block storage volume**.</p>
+    </td>
     </tr>
     <tr>
     <td>Network interfaces</td>
