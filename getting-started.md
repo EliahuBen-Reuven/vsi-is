@@ -62,9 +62,9 @@ Before you begin, make sure you have [created an IBM Cloud VPC](/docs/infrastruc
    <td>4. Size and price your instance</td>
    <td>You have three family options when it comes to creating your instances: Balanced, Compute, and Memory. The families contain pre-configured instances, called Profiles, that meet the needs of most customers and can be ready to configure in as little as 5 minutes.  
      <ul>
-     <li><a href="/docs/vsi-is/vsi_is_profiles_balanced.html">Balanced</a></li>
-     <li><a href="/docs/vsi-is/vsi_is_profiles_compute.html">Compute</a></li>
-     <li><a href="/docs/vsi-is/vsi_is_profiles_memory.html">Memory</a></li> 
+     <li><a href="/docs/vsi-is?topic=virtual-servers-is-profiles#balanced">Balanced</a></li>
+     <li><a href="/docs/vsi-is?topic=virtual-servers-is-profiles#compute">Compute</a></li>
+     <li><a href="/docs/vsi-is?topic=virtual-servers-is-profiles#memory">Memory</a></li> 
      </ul>
   <p>Use the [Pricing](/docs/infrastructure/vpc/vpc-vsi-pricing.html) information to help you size and price your instance.</p></td>
  <tr>
