@@ -35,13 +35,13 @@ No. It is currently not supported to move a virtual server from classic infrastr
 ## Why doesn't my {{site.data.keyword.vsi_is_short}} instance appear in the Device List in {{site.data.keyword.slportal}}?
 {: faq}
 
-{{site.data.keyword.vsi_is_short}} instances appear only in {{site.data.keyword.cloud_notm}} console. For more information about managing {{site.data.keyword.vsi_is_short}}, see [Managing virtual server instances](/docs/vsi/vsi_is_manage_instances.html).
+{{site.data.keyword.vsi_is_short}} instances appear only in {{site.data.keyword.cloud_notm}} console. For more information about managing {{site.data.keyword.vsi_is_short}}, see [Managing virtual server instances](/docs/vsi-is/vsi_is_manage_instances.html).
 
 
 ## What virtual server families are supported with {{site.data.keyword.vpc_short}}?
 {: faq}
 
-Currently, only public virtual servers in the balanced, memory, and compute families are supported. For more information, see [Profiles](/docs/vsi/vsi_is_profiles.html).
+Currently, only public virtual servers in the balanced, memory, and compute families are supported. For more information, see [Profiles](/docs/vsi-is/vsi_is_profiles.html).
 
 ## How do I get support for my {{site.data.keyword.vsi_is_short}}?
 {: #betasupport}

@@ -27,7 +27,7 @@ The following operating systems are available as stock images when you create a 
 * Debian 8.x, 9.x
 * Windows 2016, 2012 R2, 2012
 
-When you order an instance, the images are cloud-init enabled to optimize provisioning times. With a cloud-init enabled image, you can provide user data. In the **User Data** field on the order form, you can enter optional cloud-init user data for the server. For more information about user data and automation, see [User Data](/docs/vsi/vsi_is_provisioning_scripts.html).
+When you order an instance, the images are cloud-init enabled to optimize provisioning times. With a cloud-init enabled image, you can provide user data. In the **User Data** field on the order form, you can enter optional cloud-init user data for the server. For more information about user data and automation, see [User Data](/docs/vsi-is/vsi_is_provisioning_scripts.html).
 
 ## Virtualization
 Instances require an image that supports Hardware Virtualization Machine (HVM) boot mode. The HVM virtualization type allows an image to run directly on a virtual server, which is required for advanced networking and GPU capabilities.

@@ -20,7 +20,7 @@ lastupdated: "2018-01-21"
 ## Before you Begin
 To access {{site.data.keyword.vsi_is_full}} instances, you must have an SSH key available to use. You can manage SSH keys in {{site.data.keyword.cloud_notm}} console and by using the CLI. 
 
-For more information about locating or generating an SSH key, see [SSH Keys](/docs/vsi/vsi_is_ssh_keys_about.html).
+For more information about locating or generating an SSH key, see [SSH Keys](/docs/vsi-is/vsi_is_ssh_keys_about.html).
 {: tip}
 
 ## Managing SSH keys with IBM Cloud console

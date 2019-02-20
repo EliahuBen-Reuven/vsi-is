@@ -43,4 +43,4 @@ For more information about overall networking features in the {{site.data.keywor
 * Security groups function as a virtual firewall for virtual server instances.
 * SSH keys on your virtual server instance authenticate a secure channel for network communication.
 
-For more information about these security options, see [Security in your IBM Cloud VPC](/docs/infrastructure/vpc-network/vpc-security.html) and [Managing SSH keys](/docs/vsi/vsi_is_ssh_keys.html).
+For more information about these security options, see [Security in your IBM Cloud VPC](/docs/infrastructure/vpc-network/vpc-security.html) and [Managing SSH keys](/docs/vsi-is/vsi_is_ssh_keys.html).

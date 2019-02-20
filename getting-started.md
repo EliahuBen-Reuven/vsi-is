@@ -62,9 +62,9 @@ Before you begin, make sure you have [created an IBM Cloud VPC](/docs/infrastruc
    <td>4. Size and price your instance</td>
    <td>You have three family options when it comes to creating your instances: Balanced, Compute, and Memory. The families contain pre-configured instances, called Profiles, that meet the needs of most customers and can be ready to configure in as little as 5 minutes.  
      <ul>
-     <li><a href="/docs/vsi/vsi_is_profiles_balanced.html">Balanced</a></li>
-     <li><a href="/docs/vsi/vsi_is_profiles_compute.html">Compute</a></li>
-     <li><a href="/docs/vsi/vsi_is_profiles_memory.html">Memory</a></li> 
+     <li><a href="/docs/vsi-is/vsi_is_profiles_balanced.html">Balanced</a></li>
+     <li><a href="/docs/vsi-is/vsi_is_profiles_compute.html">Compute</a></li>
+     <li><a href="/docs/vsi-is/vsi_is_profiles_memory.html">Memory</a></li> 
      </ul>
   <p>Use the [Pricing](/docs/infrastructure/vpc/vpc-vsi-pricing.html) information to help you size and price your instance.</p></td>
  <tr>
@@ -76,7 +76,7 @@ Before you begin, make sure you have [created an IBM Cloud VPC](/docs/infrastruc
    <td>If you have not requested access already, request access to {{site.data.keyword.vpc_short}}.</td>
 <tr>
 <td>7. Generate an SSH key</td>
-<td> For instructions, see [SSH keys](/docs/vsi/vsi_is_ssh_keys_about.html).</td>
+<td> For instructions, see [SSH keys](/docs/vsi-is/vsi_is_ssh_keys_about.html).</td>
 <tr>
 <td>8. Planning for your instance</td>
 <td> For more information to help you plan for, provision, and configure your resources successfully, see [Planning for instances](/docs/vsi/vsi_best_practices.html).</td>
@@ -84,14 +84,14 @@ Before you begin, make sure you have [created an IBM Cloud VPC](/docs/infrastruc
 <td>9. Creating your instance</td>
 <td>
 <p>
-To start creating an instance, see [Creating an instance](/docs/vsi/vsi_is_create_instance.html).
+To start creating an instance, see [Creating an instance](/docs/vsi-is/vsi_is_create_instance.html).
 </td>  
 <tr>
 <td>10. Connecting to your instance</td>
 <td>Your instance is now ready! See the following topics under *Connecting* to verify the instance was successfully created.
    <ul>
-   <li>[Connecting to your Linux instance](/docs/vsi/vsi_is_connecting_linux_gc.html)</li>
-   <li>[Connecting to your Windows instance](/docs/vsi/vsi_is_connecting_windows_gc.html)</li>
+   <li>[Connecting to your Linux instance](/docs/vsi-is/vsi_is_connecting_linux_gc.html)</li>
+   <li>[Connecting to your Windows instance](/docs/vsi-is/vsi_is_connecting_windows_gc.html)</li>
    </ul>
 </td>
 </td>
@@ -105,7 +105,7 @@ To start creating an instance, see [Creating an instance](/docs/vsi/vsi_is_creat
   
 ## Next steps
 After your instance is provisioned, explore your options.
-* [Managing your instance](/docs/vsi/vsi_is_manage_instances.html)
+* [Managing your instance](/docs/vsi-is/vsi_is_manage_instances.html)
 * [{{site.data.keyword.vsi_is_short}} permissions](/docs/infrastructure/vpc/vpc-vsi-permissions.html)
 * [Security in your IBM Cloud VPC](/docs/infrastructure/vpc/vpc-security.html)
 * More about [IBM Cloud Virtual Private Cloud](/docs/infrastructure/vpc/about-vpc-is.html)
