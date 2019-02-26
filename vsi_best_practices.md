@@ -29,7 +29,7 @@ After you have an {{site.data.keyword.vpc_short}} available, consider the follow
 |        Considerations|
 |-------------------|
 |__ 1. Make sure your account has the required [user permissions](/docs/infrastructure/vpc/vpc-vsi-permissions.html). If you have authorization as an editor or admin on an {{site.data.keyword.vpc_short}} resource, then you also inherit authorization to create, delete, and modify virtual server instances within that virtual private cloud.|
-|__ 2. Check your [account limits](/docs/vsi-is//docs/vsi-is/vsi_is_faq.html#concurrent) for concurrent instances. |
+|__ 2. Check your [account limits](/docs/vsi-is/vsi_is_faq.html#concurrent) for concurrent instances. |
 |__ 3. Make sure your [SSH key](/docs/vsi-is/vsi_is_ssh_keys_about.html) is available.
 |__ 4. Determine what instance location to select.|
 |__ 5. Consider the popular [profile options](/docs/vsi-is/vsi_is_profiles.html) of vCPU and RAM combinations for your workload. Profiles contain preconfigured instances that are ready to use in a matter of minutes. It's important to ensure your instances will have the necessary resources to keep your workloads and your environment up and running.|
