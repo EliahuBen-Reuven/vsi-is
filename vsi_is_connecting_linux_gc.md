@@ -4,6 +4,8 @@ copyright:
   years: 2018, 2019
 lastupdated: "2018-11-14"
 
+subcollection: virtual-servers-is
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -21,7 +23,7 @@ After you have created your {{site.data.keyword.vsi_is_full}} Linux instance, yo
 ## Locating floating IP address
 {: #locating-floating-ip-address}
 
-If you need to locate your floating IP address for the instance to which you want to connect, complete the following steps. If you already know your floating IP address, you can skip to [Getting connected](/docs/vsi-is/vsi_is_connecting_linux_gc.html#getting-connected). 
+If you need to locate your floating IP address for the instance to which you want to connect, complete the following steps. If you already know your floating IP address, you can skip to [Getting connected](/docs/vsi-is?topic=virtual-servers-is-connecting-to-your-linux-instance#getting-connected).
 
 1. You need to identify your floating IP ID before you can locate your floating IP address. Run the following command to identify your floating IP ID:
 
@@ -29,9 +31,9 @@ If you need to locate your floating IP address for the instance to which you wan
    $ ibmcloud is instance-network-interfaces <INSTANCE_ID> --json
    ```
    {:codeblock}
-   
-   For this example, you'd see a response similiar to the following output (using generic x and 123 values for example purposes only): 
-   
+
+   For this example, you'd see a response similiar to the following output (using generic x and 123 values for example purposes only):
+
    ```
    "floating_ips": [
            {
@@ -43,16 +45,16 @@ If you need to locate your floating IP address for the instance to which you wan
        ]
    ```
    {:screen}  
-    
+
 2. Now that you have your floating IP ID, you can locate your floating IP address by running the following command.
-   
+
    ```
    $ ibmcloud is ip <FLOATING_IP_ID>
    ```
    {:codeblock}
-     
+
    For this example, you'd see a response similiar to the following output (using generic x and 123 values for example purposes only):
-   
+
    ```
    ID               12345x67-8901-234x-5678-9xx01xx23x4x   
    Address          123.45.678.90   
@@ -67,7 +69,7 @@ If you need to locate your floating IP address for the instance to which you wan
    Tags             -   
    ```
    {:screen}
-  
+
 Optionally, you can locate the floating IP address associated to the instance to which you want to connect through the {{site.data.keyword.cloud_notm}} console.
 {:tip}
 
@@ -102,4 +104,4 @@ The values returned below are for example purposes only.
    {:codeblock}
 
 ## Next steps
-After you are connected to your instance, you can [manage your instances using the {{site.data.keyword.cloud_notm}} console](/docs/vsi-is/vsi_is_manage_instances.html) or [manage your instances using the CLI](/docs/vsi-is/vsi_is_manage_instances_cli.html).
+After you are connected to your instance, you can [manage your instances using the {{site.data.keyword.cloud_notm}} console](/docs/vsi-is?topic=virtual-servers-is-managing-virtual-server-instances) or [manage your instances using the CLI](/docs/vsi-is?topic=virtual-servers-is-managing-virtual-servers-cli).

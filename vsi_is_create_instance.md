@@ -1,8 +1,10 @@
 ---
 
 copyright:
-  years: 2018, 2019 
+  years: 2018, 2019
 lastupdated: "2018-02-20"
+
+subcollection: virtual-servers-is
 
 ---
 
@@ -21,7 +23,7 @@ lastupdated: "2018-02-20"
 You can create {{site.data.keyword.vsi_is_full}} from the *Virtual server instances* page in {{site.data.keyword.cloud_notm}} console.
 {:shortdesc}
 
-Before you get started, make sure you have [created an IBM Cloud VPC](/docs/infrastructure/vpc/getting-started.html).
+Before you get started, make sure you have [created an IBM Cloud VPC](/docs/infrastructure/vpc?topic=vpc-getting-started-with-ibm-cloud-virtual-private-cloud-infrastructure).
 {:important}
 
 To create an instance, select the following instance details.
@@ -63,25 +65,25 @@ To create an instance, select the following instance details.
 
     <p>For memory, an instance can have up to 256 GB of fully dedicated RAM.</p>
     <p><note>Note: Maximum values vary by family.</note></p>
-    <p>For more information, see [Profiles](/docs/vsi-is/vsi_is_profiles.html).</p>
+    <p>For more information, see [Profiles](/docs/vsi-is?topic=virtual-servers-is-profiles).</p>
     </td>
     </tr>
     <tr>
     <td>Image</td>
     <td><p>All images use cloud-init, which allows you to enter user metadata associated with the instance for post provisioning scripts.</p>
-    <p>For more information, see [Images](/docs/vsi-is/vsi_is_images.html).</p>
+    <p>For more information, see [Images](/docs/vsi-is?topic=virtual-servers-is-images).</p>
     </td>
     </tr>
     <td>SSH Key</td>
     <td>
     <p>You must select an existing SSH key or upload a new SSH key to use before you can create the instance. SSH keys are used to securely connect to the instance after it's running.</p>
     <p>Note: Alpha-numeric combinations are limited to 100 characters.</p>
-    <p>For more information, see [SSH keys](/docs/vsi-is/vsi_is_ssh_keys_about.html).</p></td>
+    <p>For more information, see [SSH keys](/docs/vsi-is?topic=virtual-servers-is-ssh-keys).</p></td>
     </tr>
     <tr>
     <td>User data</td>
     <td>
-    <p>You can add user data that automatically performs common configuration tasks or runs scripts. <p>For more information, see [User data](/docs/vsi-is/vsi_is_provisioning_scripts.html).</p>
+    <p>You can add user data that automatically performs common configuration tasks or runs scripts. <p>For more information, see [User data](/docs/vsi-is?topic=virtual-servers-is-user-data).</p>
     </td>
     </tr>
    <tr>
@@ -96,7 +98,7 @@ To create an instance, select the following instance details.
     </tr>
     <tr>
     <td>Network interfaces</td>
-    <td>Assign networking options to connect into the IBM Cloud VPC. You can create and assign up to 5 network interface cards to each instance. For more information, see [Multiple IP addresses](/docs/vsi-is/vsi_is_network_security_options.html).</td>
+    <td>Assign networking options to connect into the IBM Cloud VPC. You can create and assign up to 5 network interface cards to each instance. For more information, see [Multiple IP addresses](/docs/vsi-is?topic=virtual-servers-is-network-security-options).</td>
     </tr>
     </TBODY>
     </table>
@@ -105,10 +107,10 @@ To create an instance, select the following instance details.
 
 3. Click **Create virtual server instance** when you are ready to provision.
 
-Do you prefer to create an instance using the CLI? For more information, see [Creating an instance using the CLI](/docs/vsi-is/vsi_is_create_instance_cli.html).
+Do you prefer to create an instance using the CLI? For more information, see [Creating an instance using the CLI](/docs/vsi-is?topic=virtual-servers-is-creating-virtual-servers-cli).
 {: tip}
 
 ## Next steps
 A series of emails are sent to your administrator: acknowledgment of the virtual server instance order, order approval and processing, and a message stating the instance is created.
 
-After the server is created, associate a floating IP address to the instance. Then you can connect to your instance. For more information, see [Connecting to your Linux instance](/docs/vsi-is/vsi_is_connecting_linux_gc.html) or [Connecting to your Windows instance](/docs/vsi-is/vsi_is_connecting_windows_gc.html).
+After the server is created, associate a floating IP address to the instance. Then you can connect to your instance. For more information, see [Connecting to your Linux instance](/docs/vsi-is?topic=virtual-servers-is-connecting-to-your-linux-instance) or [Connecting to your Windows instance](/docs/vsi-is?topic=virtual-servers-is-connecting-to-your-windows-instance).

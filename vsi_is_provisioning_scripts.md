@@ -1,11 +1,10 @@
 ---
 
-
-
 copyright:
   years: 2018, 2019
 lastupdated: "2018-11-14"
 
+subcollection: virtual-servers-is
 
 ---
 
@@ -22,8 +21,8 @@ lastupdated: "2018-11-14"
 When you create an {{site.data.keyword.vsi_is_full}} instance, you can add user data that automatically performs common configuration tasks or runs scripts. In the **User Data** field on the order form, you can enter optional cloud-init user data for the server.
 {:shortdesc}
 
-## User data examples for Linux 
-The following example shows how a Linux user can add a new user and provide the user with an authorized SSH key. The **Name** field will have the public key added to `~/.ssh/authorized_keys`. 
+## User data examples for Linux
+The following example shows how a Linux user can add a new user and provide the user with an authorized SSH key. The **Name** field will have the public key added to `~/.ssh/authorized_keys`.
 
 ```
 #cloud-config
@@ -47,7 +46,7 @@ echo <sshKey> > ~/.ssh/authorized_keys
 ```
 {:codeblock}
 
-You can paste one of these examples directly into the **User Data** field. The user data is then available to the virtual server instance during provisioning. 
+You can paste one of these examples directly into the **User Data** field. The user data is then available to the virtual server instance during provisioning.
 
 For more Linux user data examples and information, see [Cloud config examples ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloudinit.readthedocs.io/en/0.7.9/topics/examples.html){:new_window}.
 

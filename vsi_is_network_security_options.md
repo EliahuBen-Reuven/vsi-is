@@ -4,6 +4,8 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-01-16"
 
+subcollection: virtual-servers-is
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -34,7 +36,7 @@ Bandwidth is associated with the instance itself, and is not a configurable aspe
 
 ## Networking options
 
-For more information about overall networking features in the {{site.data.keyword.vpc_short}} environment, see [About Networking for VPC](/docs/infrastructure/vpc-network/about-network.html).
+For more information about overall networking features in the {{site.data.keyword.vpc_short}} environment, see [About Networking for VPC](/docs/infrastructure/vpc-network?topic=vpc-network-about-networking-for-vpc).
 
 ## Security options
 
@@ -43,4 +45,4 @@ For more information about overall networking features in the {{site.data.keywor
 * Security groups function as a virtual firewall for virtual server instances.
 * SSH keys on your virtual server instance authenticate a secure channel for network communication.
 
-For more information about these security options, see [Security in your IBM Cloud VPC](/docs/infrastructure/vpc-network/vpc-security.html) and [Managing SSH keys](/docs/vsi-is/vsi_is_ssh_keys.html).
+For more information about these security options, see [Security in your IBM Cloud VPC](/docs/infrastructure/vpc-network?topic=vpc-network-security-in-your-ibm-cloud-vpc) and [Managing SSH keys](/docs/vsi-is?topic=virtual-servers-is-managing-ssh-keys).

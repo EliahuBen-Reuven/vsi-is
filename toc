@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="virtual-servers-is" audience="compute" arm="407" href="/docs/vsi-is/getting-started.html" path="vsi-is"}
+{: .toc subcollection="virtual-servers-is" audience="compute" arm="407" href="/docs/vsi-is?topic=virtual-servers-is-gettingstartedvsigen" path="vsi-is"}
 IBM Cloud Virtual Servers with VPC
 
     {: .navgroup id="learn"}
@@ -33,20 +33,20 @@ IBM Cloud Virtual Servers with VPC
         vsi_is_manage_instances_cli.md
         vsi_is_ssh_keys.md
     {: .navgroup-end}
-    
+
     {: .topicgroup}
     Related links
-        [Getting started with IBM Cloud Virtual Private Cloud](https://console.bluemix.net/docs/infrastructure/vpc/getting-started.html)
-        [Creating an IBM Cloud VPC using the IBM Cloud console](https://console.bluemix.net/docs/infrastructure/vpc/console-tutorial.html)
+        [Getting started with IBM Cloud Virtual Private Cloud](/infrastructure/vpc/vpc-getting-started-with-ibm-cloud-virtual-private-cloud-infrastructure#getting-started-with-ibm-cloud-virtual-private-cloud-infrastructure)
+        [Creating an IBM Cloud VPC using the IBM Cloud console](/infrastructure/vpc/vpc-creating-a-vpc-using-the-ibm-cloud-console#creating-a-vpc-using-the-ibm-cloud-console)
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
     [API reference for VPC](https://console.cloud.ibm.com/apidocs/rias/)
-    [Compute CLI reference for VPC](https://console.cloud.ibm.com/docs/infrastructure-service-cli-plugin/vpc-cli-reference.html#compute)
+    [Compute CLI reference for VPC](/infrastructure-service-cli-plugin/infrastructure-service-cli-compute#compute)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
     vsi_is_faq.md
     vsi_is_troubleshooting.md
-    [Getting help and support](https://console.bluemix.net/docs/infrastructure/vpc?topic=vpc-getting-help-and-support#getting-help-and-support)
+    [Getting help and support](/infrastructure/vpc/vpc-getting-help-and-support#gettinghelp)
     {: .navgroup-end}

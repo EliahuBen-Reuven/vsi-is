@@ -1,11 +1,10 @@
 ---
 
-
-
 copyright:
   years: 2018, 2019
 lastupdated: "2019-01-28"
 
+subcollection: virtual-servers-is
 
 ---
 
@@ -16,10 +15,10 @@ lastupdated: "2019-01-28"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Memory 
+# Memory
 
 {: #memory}
-Memory profiles are best for memory intensive workloads, such as large caching workloads, intensive database applications, or in-memory 
+Memory profiles are best for memory intensive workloads, such as large caching workloads, intensive database applications, or in-memory
 analytics workloads.
 
 The offering is available in the following profiles:
@@ -33,9 +32,9 @@ The offering is available in the following profiles:
 | m-32x256 | 32 | 256 |
 {: caption="Table 1. Virtual server instance memory profile options" caption-side="top"}
 
-**Storage Notes:** 
+**Storage Notes:**
 
-* SAN primary boot disk (100GB) 
-* Pricing for public virtual servers using SAN storage includes virtual CPU, memory, and primary boot disk. 
+* SAN primary boot disk (100GB)
+* Pricing for public virtual servers using SAN storage includes virtual CPU, memory, and primary boot disk.
 
-All supported operating systems (such as CentOS, Debian, Ubuntu, and Windows) are available with this offering. 
+All supported operating systems (such as CentOS, Debian, Ubuntu, and Windows) are available with this offering.

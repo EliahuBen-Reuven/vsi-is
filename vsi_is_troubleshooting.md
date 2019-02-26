@@ -4,6 +4,8 @@ copyright:
   years: 2018, 2019
 lastupdated: "2018-11-07"
 
+subcollection: virtual-servers-is
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -19,11 +21,11 @@ If you experience difficulties with your {{site.data.keyword.vsi_is_full}} insta
 
 ## Permissions not set up in IBM Cloud
 
-Before you can create {{site.data.keyword.vsi_is_short}}, you need the correct permissions to be set up in {{site.data.keyword.cloud_notm}} console. If your permissions are not correct, you can create a server and it shows `Pending` status, which quickly turns into `Failed` status. Make sure that the master of the account assigns you the correct [permissions](/docs/infrastructure/vpc/vpc-user-permissions.html).
+Before you can create {{site.data.keyword.vsi_is_short}}, you need the correct permissions to be set up in {{site.data.keyword.cloud_notm}} console. If your permissions are not correct, you can create a server and it shows `Pending` status, which quickly turns into `Failed` status. Make sure that the master of the account assigns you the correct [permissions](/docs/infrastructure/vpc?topic=vpc-managing-user-permissions-for-vpc-resources).
 
 ## Servers are all in Unknown status
 
-Most likely you do not have adequate permissions to view the server status. Make sure that you have the correct [permissions](/docs/infrastructure/vpc/vpc-user-permissions.html). 
+Most likely you do not have adequate permissions to view the server status. Make sure that you have the correct [permissions](/docs/infrastructure/vpc?topic=vpc-managing-user-permissions-for-vpc-resources).
 
 The Unknown status also might be caused by an expired IMS token. Run `bx sl init` again and rebuild the `ims_subject` with the new token. Make sure that you are passing in the `X-Subject-Token:$ims_subject` parameter in the request header.
 
