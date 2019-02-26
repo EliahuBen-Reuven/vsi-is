@@ -54,7 +54,7 @@ Before you begin, make sure you have [created an IBM Cloud VPC](/docs/infrastruc
    </td>
  <tr>
    <td>2. Sign up for IBM Cloud</td>
-   <td>For information on how to set up your IBM Cloud account, see <a href="https://console.bluemix.net/docs/admin/adminpublic.html#signing-up-for-ibm-cloud">Signing up for IBM Cloud</a>.</td>
+   <td>For information on how to set up your IBM Cloud account, see <a href="/docs/account?topic=account-signup#signup">Signing up for IBM Cloud</a>.</td>
  <tr>
    <td>3. Determine your workload specifications</td>
    <td>Before you create your instance, determine how it will be used and the instance size you need to be successful. For example, do you intend to use it for development and testing, or production? Are you testing a user experience, processing lengthy algorithms, backing up and restoring data, or increasing latency speed?</td>  
@@ -69,7 +69,7 @@ Before you begin, make sure you have [created an IBM Cloud VPC](/docs/infrastruc
   <p>Use the [Pricing](/docs/infrastructure/vpc/vpc-vsi-pricing.html) information to help you size and price your instance.</p></td>
  <tr>
    <td>5. Log in to your IBM Cloud account</td>
-   <td>Access the {{site.data.keyword.vsi_is_short}} Order Form from the <a href="https://console.bluemix.net/catalog/">IBM Cloud catalog</a>. You will need an <a href="https://console.bluemix.net/docs/customer-portal/getting-started.html#getting-started">IBMid and password</a>.
+   <td>Access the {{site.data.keyword.vsi_is_short}} Order Form from the <a href="https://console.bluemix.net/catalog/">IBM Cloud catalog</a>. You will need an <a href="/docs/customer-portal?topic=customer-portal-getting-started#getting-started">IBMid and password</a>.
    </td>
  <tr>
    <td>6. Request access to the {{site.data.keyword.vpc_short}} experience</td>
