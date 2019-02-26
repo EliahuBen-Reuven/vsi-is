@@ -79,7 +79,7 @@ Before you begin, make sure you have [created an IBM Cloud VPC](/docs/infrastruc
 <td> For instructions, see [SSH keys](/docs/vsi-is/vsi_is_ssh_keys_about.html).</td>
 <tr>
 <td>8. Planning for your instance</td>
-<td> For more information to help you plan for, provision, and configure your resources successfully, see [Planning for instances](/docs/vsi/vsi_best_practices.html).</td>
+<td> For more information to help you plan for, provision, and configure your resources successfully, see [Planning for instances](/docs/vsi-is/vsi_best_practices.html).</td>
 <tr>
 <td>9. Creating your instance</td>
 <td>
@@ -107,7 +107,7 @@ To start creating an instance, see [Creating an instance](/docs/vsi-is/vsi_is_cr
 After your instance is provisioned, explore your options.
 * [Managing your instance](/docs/vsi-is/vsi_is_manage_instances.html)
 * [{{site.data.keyword.vsi_is_short}} permissions](/docs/infrastructure/vpc/vpc-vsi-permissions.html)
-* [Security in your IBM Cloud VPC](/docs/infrastructure/vpc/vpc-security.html)
+* [Security in your IBM Cloud VPC](/docs/infrastructure/vpc-network?topic=vpc-network-security-in-your-ibm-cloud-vpc#security-in-your-ibm-cloud-vpc)
 * More about [IBM Cloud Virtual Private Cloud](/docs/infrastructure/vpc/about-vpc-is.html)
  
 
