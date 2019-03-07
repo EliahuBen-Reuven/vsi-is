@@ -32,8 +32,8 @@ The following families are available:
 {: caption="Table 1. Virtual server family selections" caption-side="top"}
 
 ## Balanced
-
 {: #balanced}
+
 The balanced profiles provide higher performance, since resources are not oversubscribed. Network performance ranges from standard to premium.
 
 The offering is available in the following profiles:
@@ -57,8 +57,8 @@ The offering is available in the following profiles:
 All supported operating systems (such as CentOS, Debian, Ubuntu, and Windows) are available with this offering.
 
 ## Compute
-
 {: #compute}
+
 Compute profiles are best for workloads with intensive CPU demands, such as high web traffic workloads, production batch processing, and
 front-end web servers.
 
@@ -81,8 +81,8 @@ The offering is available in the following profiles:
 All supported operating systems (such as CentOS, Debian, Ubuntu, and Windows) are available with this offering.
 
 ## Memory
-
 {: #memory}
+
 Memory profiles are best for memory intensive workloads, such as large caching workloads, intensive database applications, or in-memory
 analytics workloads.
 
