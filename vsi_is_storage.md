@@ -20,7 +20,7 @@ subcollection: virtual-servers-is
 # Storage
 
 When you provision an {{site.data.keyword.vsi_is_full}} instance, a 100 GB, general purpose IOPS (3 IOPS/GB) block storage volume is 
-automatically created as a primary boot volume and attached to the instance. During provisioning, you can rename the boot volume and change the volume size. You can also create secondary data volumes, which are automatically attached to the instance.
+automatically created as a primary boot volume and attached to the instance. You can also create secondary data volumes, which are automatically attached to the instance.
 {:shortdesc}
 
 - For more information about block storage volumes for the VPC, see [About Block Storage for VPC](/docs/infrastructure/block-storage-is?topic=block-storage-is-block-storage-about).  
