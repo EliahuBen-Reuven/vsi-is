@@ -16,8 +16,8 @@ subcollection: virtual-servers-is
 {:table: .aria-labeledby="caption"}
 
 # Balanced
-
 {: #balanced}
+
 The balanced profiles provide higher performance, since resources are not oversubscribed. Network performance ranges from standard to premium.
 
 The offering is available in the following profiles:
