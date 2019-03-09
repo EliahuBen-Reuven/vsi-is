@@ -54,10 +54,11 @@ Common management actions
 
 |              Instance action          |  Command              |  What happens next           |
 | ---------------------------------------| --------------------------|----------------------------- |
-| Restart          |`ibmcloud is instance-reboot`   | The instance is immediately powered off and then powered back on again.      |
-| Stop / Start     | `ibmcloud is instance-start` or `ibmcloud is instance-stop`  | If the instance is stopped, the instance remains in the stopped state and must be started manually. Billing is [suspended](/docs/infrastructure/vpc?topic=vpc-pricing-for-virtual-servers-for-vpc#suspend-billing) for some compute resources while the instance is stopped. You cannot interact with an instance if it is stopped. If the device is started, normal interaction continues.    |
-| Update          | `ibmcloud is instance-update`  | After you rename the device, the name automatically updates. |
-| Delete         | `ibmcloud is instance-delete` | After you confirm the delete action, the process to delete the instance and its associated vNIC, boot volume, and data begins. The delete action can take up to 30 minutes, but when the process is complete, the instance no longer appears on the Virtual server instances page. The floating IP address that is associated to the virtual server instance is unassociated, but remains on your account.    |
+| Reset          |`ibmcloud is instance-reset`   | The instance is powered off and then powered on.     |
+| Restart          |`ibmcloud is instance-reboot`   | The operating system of the instance is restarted.    |
+| Stop / Start          | `ibmcloud is instance-start` or `ibmcloud is instance-stop`  | If the device has been stopped, the device remains in the stopped state and must be manually started. You cannot interact with an instance if it is stopped. If the device is started, normal interaction continues.    |
+| Update          | `ibmcloud is instance-update`  | After renaming the device, the name is automatically updated. When performing a search, use the new instance name when attempting to locate content associated with it.    |
+| Delete         | `ibmcloud is instance-delete` | After confirming the delete action, the process to delete the instance and its associated vNIC, boot volume, and data begins. The delete action can take several minutes, but when the process is complete, the instance no longer appears on the Virtual server instances page. The floating IP address that is associated to the virtual server instance is unassociated, but remains on your account.    |
 {: caption="Table 1. Management actions for your instances" caption-side="top"}
 
 If you prefer to manage instances by using the {{site.data.keyword.cloud}} console, see [Managing an instance](/docs/vsi-is?topic=virtual-servers-is-managing-virtual-server-instances).
