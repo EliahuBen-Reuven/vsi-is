@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2018-01-21"
+lastupdated: "2019-03-08"
 
 subcollection: virtual-servers-is
 
@@ -56,7 +56,7 @@ Common management actions
 | ---------------------------------------| --------------------------|----------------------------- |
 | Reset          |`ibmcloud is instance-reset`   | The instance is powered off and then powered on.     |
 | Restart          |`ibmcloud is instance-reboot`   | The operating system of the instance is restarted.    |
-| Stop / Start          | `ibmcloud is instance-start` or `ibmcloud is instance-stop`  | If the device has been stopped, the device remains in the stopped state and must be manually started. You cannot interact with an instance if it is stopped. If the device is started, normal interaction continues.    |
+| Stop / Start          | `ibmcloud is instance-stop` or `ibmcloud is instance-start`  | If the device has been stopped, the device remains in the stopped state and must be manually started. You cannot interact with an instance if it is stopped. If the device is started, normal interaction continues.    |
 | Update          | `ibmcloud is instance-update`  | After renaming the device, the name is automatically updated. When performing a search, use the new instance name when attempting to locate content associated with it.    |
 | Delete         | `ibmcloud is instance-delete` | After confirming the delete action, the process to delete the instance and its associated vNIC, boot volume, and data begins. The delete action can take several minutes, but when the process is complete, the instance no longer appears on the Virtual server instances page. The floating IP address that is associated to the virtual server instance is unassociated, but remains on your account.    |
 {: caption="Table 1. Management actions for your instances" caption-side="top"}
