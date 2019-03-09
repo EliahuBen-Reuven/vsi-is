@@ -1,9 +1,10 @@
-
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-08-15"
+  years: 2018, 2019
+lastupdated: "2018-01-21"
+
+subcollection: virtual-servers-is
 
 ---
 
@@ -18,16 +19,16 @@ lastupdated: "2018-08-15"
 # Creating virtual server instances (CLI)
 {: #creating-virtual-servers-cli}
 
-You can create instances using the command line interface (CLI).
+You can create {{site.data.keyword.vsi_is_full}} instances by using the command line interface (CLI).
 {:shortdesc}
 
 ## Before you begin
 1. Ensure you have downloaded, installed, and initialized the following CLI plug-ins:
     * {{site.data.keyword.cloud_notm}} CLI
-    * {{site.data.keyword.cloud_notm}} Regional API CLI
+    * The infrastructure-service plugin
 
-   For more information, see [CLI access](/docs/infrastructure/vpc/how-to-verify-access.html).
-2. Ensure you have already created a virtual private cloud.
+   For more information, see [IBM Cloud CLI for VPC Reference](/docs/infrastructure-service-cli-plugin?topic=infrastructure-service-cli-vpc-reference).
+2. Make sure you have already [created an {{site.data.keyword.vpc_short}}](/docs/infrastructure/vpc?topic=vpc-getting-started-with-ibm-cloud-virtual-private-cloud-infrastructure).
 
 ## Gathering information to create an instance using the CLI
 Ready to create an instance? Before you can run the `ibmcloud is instances` command, you'll need to know the details about the instance, such as what profile or image you want to use.
@@ -36,12 +37,12 @@ Let's gather that information first:
 
 |    Instance details   |  Listing options                |  Copy your values                             |
 | --------------------- | --------------------------------|---------------------------------------------- |
-| Image                 | `ibmcloud is images`            |                                               |
-| Profile               | `ibmcloud is instance-profiles` |                                               |
-| Key                   | `ibmcloud is keys`              |                                               |
-| Subnet                | `ibmcloud is subnets`           |                                               |
-| VPC                   | `ibmcloud is vpcs`              |                                               |
-| Zone                  | `ibmcloud is zones`             |                                               |   
+| Image                 | `ibmcloud is images`            |                           |
+| Profile               | `ibmcloud is instance-profiles` |                           |
+| Key                   | `ibmcloud is keys`              |                           |
+| VPC                   | `ibmcloud is vpcs`              |                           |
+| Subnet                | `ibmcloud is subnets`           |                           |
+| Zone                  | `ibmcloud is zones`             |                           |   
 {: caption="Table 1. Required instance details" caption-side="top"}   
 
 Use the following commands to determine the required information for creating a new instance.
@@ -72,7 +73,7 @@ Use the following commands to determine the required information for creating a 
    ```
    {:screen}
 
-3. List the virtual private clouds that are associated with your account.
+3. List the {{site.data.keyword.vpc_short}}s that are associated with your account.
    ```
    $ ibmcloud is vpcs
    ```
@@ -86,9 +87,9 @@ Use the following commands to determine the required information for creating a 
    ```
    {:screen}
 
-   If you do not have one available, you can create a VPC using the `ibmcloud is vpc-create` command. For more information about creating a VPC, see [VPC Beta CLI reference](/docs/infrastructure/vpc/cli-network-reference.html).
+   If you do not have one available, you can create an {{site.data.keyword.vpc_short}} by using the `ibmcloud is vpc-create` command. For more information about creating an {{site.data.keyword.vpc_short}}, see [IBM CLoud VPC CLI reference](/docs/infrastructure-service-cli-plugin?topic=infrastructure-service-cli-vpc-reference#vpcs).
 
-4. List the subnets that are associated with the virtual private cloud.
+4. List the subnets that are associated with the {{site.data.keyword.vpc_short}}.
    ```
    $ ibmcloud is subnets
    ```
@@ -103,7 +104,7 @@ Use the following commands to determine the required information for creating a 
    ```
    {:screen}
 
-   If you do not have one available, you can create a subnet using the `ibmcloud is subnet-create` command. For more information about creating a subnet, see [VPC Beta CLI reference](/docs/infrastructure/vpc/cli-network-reference.html).
+   If you do not have one available, you can create a subnet using the `ibmcloud is subnet-create` command. For more information about creating a subnet, see [IBM CLoud VPC CLI reference](/docs/infrastructure-service-cli-plugin?topic=infrastructure-service-cli-vpc-reference#subnets).
 
 5. List the available profiles for creating your instance.
    ```
@@ -152,12 +153,27 @@ Use the following commands to determine the required information for creating a 
    ```
    {:screen}
 
-   If you do not have one available, you can create an SSH key using the `ibmcloud is key-create` command. For more information about managing SSH keys, see [Managing SSH keys](vsi_is_ssh_keys.html).
+   If you do not have one available, you can create an SSH key using the `ibmcloud is key-create` command. For more information about managing SSH keys, see [Managing SSH keys](/docs/vsi-is?topic=virtual-servers-is-managing-ssh-keys).
 
 ## Creating an instance using the CLI
 After you know these values, use them to run the `instance-create` command. In addition to the information that you gathered, you must specify a name for the instance, and a port speed in MB per second. The following example shows the command in action (using generic x and 123 values for example purposes only).  
 
 1. Create a new instance.
+   ```
+   $ ibmcloud is instance-create \
+       <INSTANCE_NAME> \
+       <VPC_ID> \
+       <ZONE_NAME> \
+       <PROFILE_ID> \
+       <SUBNET_ID> \
+       <PORT_SPEED> \
+       --image <IMAGE_ID> \
+       --keys <KEY_IDS>
+   ```
+   {:codeblock}
+
+   For example, if you are creating an instance called _my-instance_ in _us-south-1_ and using the _b-2x4_ profile with a port speed of _100_, your `instance-create` command would look similar to the following sample:
+
    ```
    $ ibmcloud is instance-create \
        my-instance \
@@ -170,14 +186,14 @@ After you know these values, use them to run the `instance-create` command. In a
        --keys 1234xxxx-x12x-xxxx-34xx-xx1234xxxxxx
    ```
    {:codeblock}
-   
+
    where:
-   - `INSTANCE_NAME` is my-instance
+   - `INSTANCE_NAME` is _my-instance_
    - `VPC_ID` is _VPC_ID_
-   - `ZONE_NAME` is  us-south-1
-   - `PROFILE_ID` is b-2x4
+   - `ZONE_NAME` is  _us-south-1_
+   - `PROFILE_ID` is _b-2x4_
    - `SUBNET_ID` is _SUBNET_ID_
-   - `PORT_SPEED` is 100
+   - `PORT_SPEED` is _100_
    - `IMAGE_ID` is _IMAGE_ID_
    - `KEY_IDS` is _KEY_ID1, KEY_ID2, ..._
 
@@ -274,15 +290,15 @@ After you know these values, use them to run the `instance-create` command. In a
     ```
     {:screen}
 
-    Remember the floating IP address for later.  
+    Remember the floating IP `Address` for later.  
 
-Need more help? You can always run `ibmcloud is help` when needed.
+Need more help? You can always run `ibmcloud is instance-create --help` to display help for creating an instance.
 {: tip}
 
-Do you prefer to create an instance using the {{site.data.keyword.cloud_notm}} console? For more information, see [Creating an instance](vsi_is_create_instance.html).
+Do you prefer to create an instance using the {{site.data.keyword.cloud_notm}} console? For more information, see [Creating an instance](/docs/vsi-is?topic=virtual-servers-is-creating-virtual-servers).
 {: tip}
 
-## What happens next
-A series of emails are sent to your administrator: acknowledgment of the virtual server instance order, order approval and processing, and a message stating the instance is created.
+## Next steps
+<!-- A series of emails are sent to your administrator: acknowledgment of the virtual server instance order, order approval and processing, and a message stating the instance is created. -->
 
-After the server is created, you can [connect to your instance](vsi_is_connecting_linux_gc.html).
+After the server is created, you can connect to your instance. For more information, see [Connecting to your Linux instance](/docs/vsi-is?topic=virtual-servers-is-connecting-to-your-linux-instance) or [Connecting to your Windows instance](/docs/vsi-is?topic=virtual-servers-is-connecting-to-your-windows-instance).

@@ -1,11 +1,10 @@
 ---
 
-
-
 copyright:
-  years: 2018
-lastupdated: "2018-09-27"
+  years: 2018, 2019
+lastupdated: "2018-11-14"
 
+subcollection: virtual-servers-is
 
 ---
 
@@ -19,11 +18,11 @@ lastupdated: "2018-09-27"
 # User data
 {: #user-data}
 
-When you launch an instance, you can add user data that automatically performs common configuration tasks or runs scripts. In the **User Data** field on the order form, you can enter optional cloud-init user data for the server.
+When you create an {{site.data.keyword.vsi_is_full}} instance, you can add user data that automatically performs common configuration tasks or runs scripts. In the **User Data** field on the order form, you can enter optional cloud-init user data for the server.
 {:shortdesc}
 
-## User data examples for Linux 
-The following example shows how a Linux user can add a new user and provide the user with an authorized SSH key. The **Name** field will have the public key added to `~/.ssh/authorized_keys`. 
+## User data examples for Linux
+The following example shows how a Linux user can add a new user and provide the user with an authorized SSH key. The **Name** field will have the public key added to `~/.ssh/authorized_keys`.
 
 ```
 #cloud-config
@@ -39,7 +38,7 @@ users:
 ```
 {:codeblock}
 
-Here's another example of shell script that shows how a Linux user can add an SSH key for the current user.
+Here's another example of a shell script that shows how a Linux user can add an SSH key for the current user.
 
 ```
 #!/bin/bash
@@ -49,6 +48,8 @@ echo <sshKey> > ~/.ssh/authorized_keys
 
 You can paste one of these examples directly into the **User Data** field. The user data is then available to the virtual server instance during provisioning.
 
+For more Linux user data examples and information, see [Cloud config examples ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloudinit.readthedocs.io/en/0.7.9/topics/examples.html){:new_window}.
+
 ## User data example for Windows
 The following example shows how user data can be passed to a Windows instance. You can copy and paste this example directly into the **User Data** field.
 
@@ -57,3 +58,5 @@ The following example shows how user data can be passed to a Windows instance. Y
 Set-Content -Path "C:\\test.txt" -Value "Hello IBM Cloud Instance"
 ```
 {:codeblock}
+
+For more Windows user data examples and information, see [Cloudbase-init 1.0 documentation ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloudbase-init.readthedocs.io/en/latest/userdata.html){:new_window}.

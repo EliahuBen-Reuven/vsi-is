@@ -1,8 +1,10 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-06-01"
+  years: 2018, 2019
+lastupdated: "2018-02-20"
+
+subcollection: virtual-servers-is
 
 ---
 
@@ -12,17 +14,21 @@ lastupdated: "2018-06-01"
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:tip: .tip}
+{:important: .important}
 {:table: .aria-labeledby="caption"}
 
 # Creating virtual server instances
 {: #creating-virtual-servers}
 
-You can create instances from the *Virtual server instances* page in {{site.data.keyword.cloud}} console.
+You can create {{site.data.keyword.vsi_is_full}} from the *Virtual server instances* page in {{site.data.keyword.cloud_notm}} console.
 {:shortdesc}
 
+Before you get started, make sure you have [created an IBM Cloud VPC](/docs/infrastructure/vpc?topic=vpc-getting-started-with-ibm-cloud-virtual-private-cloud-infrastructure).
+{:important}
+
 To create an instance, select the following instance details.
-1. In {{site.data.keyword.cloud_notm}} console, navigate to **Menu icon ![Menu icon](../icons/icon_hamburger.svg) > Infrastructure VPC (Beta) > Compute > Virtual server instances**.
-2. From this page, click **New instance** and enter the following information:
+1. In [{{site.data.keyword.cloud_notm}} console ![External link icon](../icons/launch-glyph.svg "External link icon")](https://console.cloud.ibm.com/vpc), navigate to **Menu icon ![Menu icon](../icons/icon_hamburger.svg) > VPC Infrastructure > Compute > Virtual server instances**.
+2. Click **New instance** and enter the following information:
 
     <table>
     <CAPTION>Table 1. Instance provisioning selections</CAPTION>
@@ -39,11 +45,11 @@ To create an instance, select the following instance details.
     </tr>
     <tr>
     <td>Virtual private cloud</td>
-    <td>Specify the virtual private cloud that is required for your design.</td>
+    <td>Specify the IBM Cloud VPC where you want to create your instance.</td>
     </tr>
     <tr>
     <td>Location</td>
-    <td>Select the specific location that is required for your design. Locations are composed of regions: each region is a separate geographic area.</td>
+    <td>Locations are composed of regions (specific geographic areas) and zones (fault tolerant data centers within a region). Select the location where you want your virtual server instance to be created.</td>
     </tr>
     <tr>
     <td>Profile</td>
@@ -55,42 +61,44 @@ To create an instance, select the following instance details.
     <li>Memory</li>
     </ul>
     </p>
-    <p>Each physical core on the server is hyper-threaded and presented as two virtual CPUs (vCPUs). The virtual server offering provides 2.0GHz or better per vCPU with up to 48 vCPU available on a single virtual server.</p>
+    <p>Each physical core on the server is hyper-threaded and presented as two virtual CPUs (vCPUs). The virtual server offering provides 2.0 GHz or better per vCPU with up to 48 vCPU available on a single virtual server.</p>
 
-    <p>RAM is extremely straight-forward. The offering fully dedicates the amount of RAM that you select to your instance, with up to 256 GB on a single instance.</p>
-    <note>Note: Maximum values vary by family.</note>
+    <p>For memory, an instance can have up to 256 GB of fully dedicated RAM.</p>
+    <p><note>Note: Maximum values vary by family.</note></p>
+    <p>For more information, see [Profiles](/docs/vsi-is?topic=virtual-servers-is-profiles).</p>
     </td>
     </tr>
     <tr>
     <td>Image</td>
-    <td><p>All images use cloud-init, which allows you to enter user meta data associated with the instance for post provisioning scripts.</p>
-    <p>The following stock images are supported:
-    <ul>
-    <li>CentOS 7.x minimal</li>
-    <li>Ubuntu 16.04 minimal</li>
-    </ul></p>
-    <p>For more information, see [Images](vsi_is_images.html).</p>
+    <td><p>All images use cloud-init, which allows you to enter user metadata associated with the instance for post provisioning scripts.</p>
+    <p>For more information, see [Images](/docs/vsi-is?topic=virtual-servers-is-images).</p>
     </td>
     </tr>
     <td>SSH Key</td>
     <td>
-    <p>You must enter or upload an SSH key to connect before provisioning. SSH keys give you access to the instance without using a password. While you cannot generate a key, you can add a key by providing your unique alpha-numeric combination.</p>
+    <p>You must select an existing SSH key or upload a new SSH key to use before you can create the instance. SSH keys are used to securely connect to the instance after it's running.</p>
     <p>Note: Alpha-numeric combinations are limited to 100 characters.</p>
-    <p>For more information, see [SSH Keys](vsi_is_ssh_keys_about.html).</p></td>
+    <p>For more information, see [SSH keys](/docs/vsi-is?topic=virtual-servers-is-ssh-keys).</p></td>
     </tr>
     <tr>
     <td>User data</td>
     <td>
-    <p>You can add user data that automatically performs common configuration tasks or runs scripts. <p>For more information, see [User Data](vsi_is_provisioning_scripts.html).</p>
+    <p>You can add user data that automatically performs common configuration tasks or runs scripts. <p>For more information, see [User data](/docs/vsi-is?topic=virtual-servers-is-user-data).</p>
+    </td>
+    </tr>
+   <tr>
+    <td>Boot volume</td>
+    <td><p>The default boot volume size for all profiles is 100 GB. By default the boot volume includes provider managed encryption. If you want to use customer managed encryption, you can edit the details of the boot volume. For more information, see [Storage](/docs/vsi-is?topic=virtual-servers-is-storage#storage).</p>
     </td>
     </tr>
     <tr>
-    <td>Boot volume</td>
-    <td>The default boot volume size for all profiles is 100 GB.</td>
+    <td>Attached block storage volume</td>
+    <td><p>You can add one or more secondary data volumes to be included when you provision the instance. To add volumes, click **New block storage volume**.</p>
+    </td>
     </tr>
     <tr>
     <td>Network interfaces</td>
-    <td>Assign networking options to connect into the virtual private cloud. You can create and assign a single network interface to your instance.</td>
+    <td>Assign networking options to connect into the IBM Cloud VPC. You can create and assign up to 5 network interface cards to each instance. For more information, see [Multiple IP addresses](/docs/vsi-is?topic=virtual-servers-is-network-security-options).</td>
     </tr>
     </TBODY>
     </table>
@@ -99,10 +107,10 @@ To create an instance, select the following instance details.
 
 3. Click **Create virtual server instance** when you are ready to provision.
 
-Do you prefer to create an instance using the CLI? For more information, see [Creating an instance using the CLI](vsi_is_create_instance_cli.html).
+Do you prefer to create an instance using the CLI? For more information, see [Creating an instance using the CLI](/docs/vsi-is?topic=virtual-servers-is-creating-virtual-servers-cli).
 {: tip}
 
-## What happens next
+## Next steps
 A series of emails are sent to your administrator: acknowledgment of the virtual server instance order, order approval and processing, and a message stating the instance is created.
 
-After the server is created, associate a floating IP address to the instance. Then you can [connect to your instance](vsi_is_connecting_linux_gc.html).
+After the server is created, associate a floating IP address to the instance. Then you can connect to your instance. For more information, see [Connecting to your Linux instance](/docs/vsi-is?topic=virtual-servers-is-connecting-to-your-linux-instance) or [Connecting to your Windows instance](/docs/vsi-is?topic=virtual-servers-is-connecting-to-your-windows-instance).

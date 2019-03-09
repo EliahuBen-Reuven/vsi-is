@@ -1,11 +1,10 @@
 ---
 
-
-
 copyright:
-  years: 2018
-lastupdated: "2018-08-15"
+  years: 2018, 2019
+lastupdated: "2018-01-21"
 
+subcollection: virtual-servers-is
 
 ---
 
@@ -21,22 +20,22 @@ lastupdated: "2018-08-15"
 # Managing virtual server instances (CLI)
 {: #managing-virtual-servers-cli}
 
-You can view and manage your instances using the command line interface (CLI).
+You can view and manage your {{site.data.keyword.vsi_is_full}} instances by using the command line interface (CLI).
 {:shortdesc}
 
 ## Before you begin
-Ensure you have downloaded, installed, and initialized the following CLI plug-ins:
+1. Ensure you have downloaded, installed, and initialized the following CLI plug-ins:
+    * {{site.data.keyword.cloud_notm}} CLI
+    * The infrastructure-service plugin
 
-* {{site.data.keyword.cloud_notm}} CLI
-* {{site.data.keyword.cloud_notm}} Regional API CLI
-
-For more information, see [CLI access](/docs/infrastructure/vpc/how-to-verify-access.html).
+   For more information, see [IBM Cloud CLI for VPC Reference](/docs/infrastructure-service-cli-plugin?topic=infrastructure-service-cli-vpc-reference).
+2. Make sure you have already [created an {{site.data.keyword.vpc_short}}](/docs/infrastructure/vpc?topic=vpc-getting-started-with-ibm-cloud-virtual-private-cloud-infrastructure).
 
 ## Viewing instance actions
-To view the management actions performed on your instance, run the following command:
+To view the management actions that are performed on your instance, run the following command:
 
 ```
-ibmcloud is instance-actions <instance-ID>
+ibmcloud is instance-actions <server-ID>
 ```
 {:codeblock}
 
@@ -57,10 +56,10 @@ Common management actions
 | ---------------------------------------| --------------------------|----------------------------- |
 | Reset          |`ibmcloud is instance-reset`   | The instance is powered off and then powered on.     |
 | Restart          |`ibmcloud is instance-reboot`   | The operating system of the instance is restarted.    |
-| Stop/Start          | `ibmcloud is instance-start` or `ibmcloud is instance-stop`  | If the device has been stopped, the device remains in the stopped state and must be manually started. You cannot interact with an instance if it is stopped. If the device is started, normal interaction continues.    |
+| Stop / Start          | `ibmcloud is instance-start` or `ibmcloud is instance-stop`  | If the device has been stopped, the device remains in the stopped state and must be manually started. You cannot interact with an instance if it is stopped. If the device is started, normal interaction continues.    |
 | Update          | `ibmcloud is instance-update`  | After renaming the device, the name is automatically updated. When performing a search, use the new instance name when attempting to locate content associated with it.    |
 | Delete         | `ibmcloud is instance-delete` | After confirming the delete action, the process to delete the instance and its associated vNIC, boot volume, and data begins. The delete action can take several minutes, but when the process is complete, the instance no longer appears on the Virtual server instances page. The floating IP address that is associated to the virtual server instance is unassociated, but remains on your account.    |
 {: caption="Table 1. Management actions for your instances" caption-side="top"}
 
-Do you prefer to manage instances using the {{site.data.keyword.cloud}} console? For more information, see [Managing an instance](vsi_is_manage_instances.html).
+If you prefer to manage instances by using the {{site.data.keyword.cloud}} console, see [Managing an instance](/docs/vsi-is?topic=virtual-servers-is-managing-virtual-server-instances).
 {: tip}
