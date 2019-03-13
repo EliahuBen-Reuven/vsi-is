@@ -19,6 +19,7 @@ subcollection: virtual-servers-is
 {:table: .aria-labeledby="caption"}
 
 # Connecting to your Windows instance
+{: #connecting-to-your-windows-instance}
 
 After you have created your {{site.data.keyword.vsi_is_full}} Windows instance, you can connect to it by completing these steps.
 {:shortdesc}
