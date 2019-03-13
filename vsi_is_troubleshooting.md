@@ -17,6 +17,8 @@ subcollection: virtual-servers-is
 {:download: .download}
 
 # Troubleshooting your Virtual Servers for VPC
+{: #troubleshooting-your-virtual-servers-for-vpc}
+
 If you experience difficulties with your {{site.data.keyword.vsi_is_full}} instances, review the following possible causes.
 
 ## Permissions not set up in IBM Cloud
