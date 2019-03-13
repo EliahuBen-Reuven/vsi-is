@@ -18,6 +18,7 @@ subcollection: virtual-servers-is
 {:table: .aria-labeledby="caption"}
 
 # Planning for instances
+{: #planning-for-instances}
 
 When you're planning to provision {{site.data.keyword.vsi_is_full}}, you might find this configuration checklist helpful to get the most out of your virtual server deployment.
 {:shortdesc}
