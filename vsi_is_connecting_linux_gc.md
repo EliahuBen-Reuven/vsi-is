@@ -17,6 +17,8 @@ subcollection: virtual-servers-is
 {:table: .aria-labeledby="caption"}
 
 # Connecting to your Linux instance
+{: #connecting-to-your-linux-instance}
+
 After you have created your {{site.data.keyword.vsi_is_full}} Linux instance, you can connect to it by completing these steps.
 {:shortdesc}
 
