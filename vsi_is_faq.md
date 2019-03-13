@@ -17,6 +17,7 @@ subcollection: virtual-servers-is
 {:faq: data-hd-content-type='faq'}
 
 # FAQs
+{: #faqs}
 
 ## How many servers can I start?
 {: #concurrent}
