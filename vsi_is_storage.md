@@ -18,6 +18,7 @@ subcollection: virtual-servers-is
 
 
 # Storage
+{: #storage}
 
 When you provision an {{site.data.keyword.vsi_is_full}} instance, a 100 GB, general purpose IOPS (3 IOPS/GB) block storage volume is 
 automatically created as a primary boot volume and attached to the instance. You can also create secondary data volumes, which are automatically attached to the instance.
