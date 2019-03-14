@@ -4,6 +4,8 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-02-13"
 
+keywords: virtual servers, {{site.data.keyword.vsi_is_short}}, virtual private cloud
+
 subcollection: virtual-servers-is
 
 ---
