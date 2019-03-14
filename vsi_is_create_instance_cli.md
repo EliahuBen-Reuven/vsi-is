@@ -4,6 +4,8 @@ copyright:
   years: 2018, 2019
 lastupdated: "2018-01-21"
 
+keywords: virtual server instances, command line interface, creating virtual server instances
+
 subcollection: virtual-servers-is
 
 ---
