@@ -4,6 +4,8 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-02-19"
 
+keywords: Windows instance, encrypt password, decrypt password, retrieve password
+
 subcollection: virtual-servers-is
 
 ---
