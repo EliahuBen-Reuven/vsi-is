@@ -4,6 +4,8 @@ copyright:
   years: 2018, 2019
 lastupdated: "2018-12-12"
 
+keywords: IBM Cloud Virtual Private Cloud, popular profile options, necessary resources
+
 subcollection: virtual-servers-is
 
 ---
