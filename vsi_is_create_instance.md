@@ -4,6 +4,8 @@ copyright:
   years: 2018, 2019
 lastupdated: "2018-02-20"
 
+keywords: virtual server instances, virtual private cloud, boot volume, location select
+
 subcollection: virtual-servers-is
 
 ---
