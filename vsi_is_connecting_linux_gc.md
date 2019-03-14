@@ -4,6 +4,8 @@ copyright:
   years: 2018, 2019
 lastupdated: "2018-11-14"
 
+keywords: private key, IP address, instance, Linux instance
+
 subcollection: virtual-servers-is
 
 ---
